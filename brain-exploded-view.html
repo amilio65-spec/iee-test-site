@@ -64,21 +64,6 @@
   #part4:hover, #part4:focus{ filter: drop-shadow(0 0 12px rgba(238,64,151,0.55)); }
   #part5:hover, #part5:focus{ filter: drop-shadow(0 0 12px rgba(0,174,239,0.55)); }
 
-  .hint{
-    position:absolute;
-    left:50%; bottom:8.5%;
-    transform:translateX(-50%);
-    font-size:12px;
-    letter-spacing:.04em;
-    color:var(--caption);
-    opacity:0.85;
-    transition:opacity .6s ease;
-    pointer-events:none;
-    text-align:center;
-    white-space:nowrap;
-  }
-  .hint.fade{ opacity:0; }
-
   .hit-area{ cursor:pointer; }
 
   .part-label{
@@ -301,8 +286,6 @@
     <div class="part-label" id="label4" style="--pc:#ee4097"><span class="dot"></span>Cloud Solutions</div>
     <div class="part-label" id="label5" style="--pc:#00aeef"><span class="dot"></span>Business Solutions</div>
   </div>
-
-  <div class="hint" id="hint">hover a region to explore our services</div>
 </div>
 
 <script>
@@ -314,7 +297,6 @@
   var OFFSETS = {"0": [[0.0, 0.0], [-29.777057330827006, -25.200673308270268], [-66.98558602756913, -43.2277306390975], [-180.30003798390567, -114.33996062035743]], "1": [[0.0, 0.0], [0.7879157894739137, -27.30570714285699], [8.187593045112521, -89.0498511278189], [24.372002376286787, -214.31631576542006]], "2": [[0.0, 0.0], [29.77940508195843, -8.061258403223746], [62.5090478447205, -32.951278000862885], [180.30000260662393, -56.705850807880154]], "3": [[0.0, 0.0], [-5.486441102757453, -6.840000000000373], [-0.43674185463669346, -7.263709273183167], [11.703213352738544, 10.119690228909917]], "4": [[0.0, 0.0], [39.15163066095215, 9.03461365612577], [98.09214986452264, 54.09470493616891], [177.03398496240595, 156.24999999999943]], "5": [[0.0, 0.0], [12.276074999998968, 27.302850000000035], [-32.41690000000108, 89.04892499999937], [-64.91690000000096, 213.4959500000001]]};
 
   var wrap = document.getElementById('brainWrap');
-  var hint = document.getElementById('hint');
   var PART_COUNT = 6;
   var parts = [];
   var labels = [];
@@ -416,7 +398,7 @@
     }
     if (anyPulled && !hasInteracted){
       hasInteracted = true;
-      hint.classList.add('fade');
+      window.parent.postMessage({ type: 'iee-brain-interacted' }, '*');
     }
   }
 
@@ -447,7 +429,7 @@
       focusBoost[idx] = 1;
       if (!hasInteracted){
         hasInteracted = true;
-        hint.classList.add('fade');
+        window.parent.postMessage({ type: 'iee-brain-interacted' }, '*');
       }
     });
     part.addEventListener('blur', function(){
