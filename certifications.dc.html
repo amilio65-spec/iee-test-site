@@ -90,8 +90,8 @@
   html[data-iee-theme="light"] .iee-light-only{ display:inline !important; }
   .material-symbols-outlined{ font-family:'Material Symbols Outlined'; font-weight:normal; font-style:normal; line-height:1; letter-spacing:normal; text-transform:none; display:inline-block; white-space:nowrap; word-wrap:normal; direction:ltr; -webkit-font-feature-settings:'liga'; -webkit-font-smoothing:antialiased; }
   body { margin:0; background:var(--iee-bg); font-family:'Inter',system-ui,sans-serif; -webkit-font-smoothing:antialiased; }
-  a { color:#00aeef; text-decoration:none; }
-  a:hover { color:#66d4ff; text-decoration:underline; }
+  a { color:#fff200; text-decoration:none; }
+  a:hover { color:#ffe066; text-decoration:underline; }
   * { box-sizing:border-box; }
   .hl{ background-image:linear-gradient(var(--hl-color,#00AEEF),var(--hl-color,#00AEEF)); background-repeat:no-repeat; background-size:100% 1.085em; background-position:0 0.335em; line-height:1.42; color:#0B0E14; box-decoration-break:clone; -webkit-box-decoration-break:clone; }
   .svc-nav{ position:relative; display:flex; align-items:center; }
@@ -114,11 +114,11 @@
       <a href="index.dc.html" style="display:flex; align-items:center; gap:16px; text-decoration:none">
         <img src="Elements/Logo-14.svg" alt="IEE logo" style="width:66px; height:66px; flex:none">
         <div style="display:flex; flex-direction:column; gap:5px">
-          <div style="font:400 12px/1 'Michroma',sans-serif; letter-spacing:.1em; color:#EDEFF2; white-space:nowrap"><span style="color:#00aeef">I</span>NTELLIGENCE <span style="color:#00aeef">E</span>VERYWHERE <span style="color:#00aeef">E</span>NTERPRISE</div>
+          <div style="font:400 12px/1 'Michroma',sans-serif; letter-spacing:.1em; color:#EDEFF2; white-space:nowrap"><span style="color:#fff200">I</span>NTELLIGENCE <span style="color:#fff200">E</span>VERYWHERE <span style="color:#fff200">E</span>NTERPRISE</div>
         </div>
       </a>
       <nav style="display:flex; align-items:center; gap:28px; flex-wrap:wrap">
-        <a href="index.dc.html" style="font:400 11px/1 'Michroma',sans-serif; letter-spacing:.06em; text-transform:uppercase; color:#00aeef; padding-bottom:4px; border-bottom:2px solid #00aeef">Home</a>
+        <a href="index.dc.html" style="font:400 11px/1 'Michroma',sans-serif; letter-spacing:.06em; text-transform:uppercase; color:rgba(0,174,239,0.55); padding-bottom:4px; border-bottom:2px solid transparent">Home</a>
         <div class="svc-nav">
           <a href="services.dc.html" style="font:400 11px/1 'Michroma',sans-serif; letter-spacing:.06em; text-transform:uppercase; color:rgba(237,28,36,0.55); padding-bottom:4px; border-bottom:2px solid transparent">Services</a><input type="checkbox" id="svc-toggle" class="svc-toggle"><label for="svc-toggle" class="svc-caret" aria-label="Toggle services menu"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 3.5L5 6.5L8 3.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></label>
           <div class="svc-dropdown">
@@ -130,7 +130,7 @@
             <a href="business-solutions.dc.html"><span class="svc-dot" style="background:#00aeef"></span>Business Solutions</a>
           </div>
         </div>
-        <a href="certifications.dc.html" style="font:400 11px/1 'Michroma',sans-serif; letter-spacing:.06em; text-transform:uppercase; color:rgba(255,242,0,0.55); padding-bottom:4px; border-bottom:2px solid transparent">Certifications</a>
+        <a href="certifications.dc.html" style="font:400 11px/1 'Michroma',sans-serif; letter-spacing:.06em; text-transform:uppercase; color:#fff200; padding-bottom:4px; border-bottom:2px solid #fff200">Certifications</a>
         <a href="about-us.dc.html" style="font:400 11px/1 'Michroma',sans-serif; letter-spacing:.06em; text-transform:uppercase; color:rgba(0,166,81,0.55); padding-bottom:4px; border-bottom:2px solid transparent">About Us</a>
         <a href="contact.dc.html" style="display:inline-flex; align-items:center; font:400 11px/1 'Michroma',sans-serif; letter-spacing:.06em; text-transform:uppercase; color:#0B0E14; background:#ee4097; padding:9px 18px; border-radius:999px; text-decoration:none">Contact Us</a>
       </nav>
@@ -141,14 +141,9 @@
   <section style="position:relative; overflow:hidden; background:radial-gradient(120% 80% at 18% 0%, var(--iee-bg-glow) 0%, var(--iee-bg) 62%); border-bottom:1px solid var(--iee-border)">
     <canvas id="hero-plus-canvas" style="position:absolute; inset:0; width:100%; height:100%; display:block; pointer-events:none"></canvas>
     <div style="position:relative; z-index:1; max-width:1280px; margin:0 auto; padding:72px 56px 64px; display:grid; grid-template-columns:1fr 470px; gap:64px">
-      <div style="display:flex; flex-direction:column; gap:26px; padding-top:10px">
-        <h1 style="margin:0; font:400 41px/1.3 'Michroma',sans-serif; letter-spacing:0; color:var(--iee-text-muted); text-wrap:balance">Providing intelligent IT solutions,<br><span class="hl" style="--hl-color:#00aeef">everywhere it matters.</span></h1>
-        <p style="margin:0; max-width:520px; font-size:18px; line-height:1.6; color:var(--iee-text-muted); text-wrap:pretty">All of it, from a provider that's audited, proven and certified.</p>
-        <div style="margin-top:8px; display:flex; align-items:center; gap:16px; flex-wrap:wrap">
-          <a href="contact.dc.html" style="display:inline-flex; align-items:center; gap:10px; height:52px; padding:0 24px; background:#00aeef; color:#0B0E14; font:400 12px/1 'Michroma',sans-serif; letter-spacing:.02em; border-radius:999px; text-decoration:none">Book a meeting</a>
-        </div>
+      <div style="display:flex; flex-direction:column; gap:18px; justify-content:flex-start">
+        <h1 style="margin:0; font:400 38px/1.3 'Michroma',sans-serif; letter-spacing:0; color:var(--iee-text-muted); text-wrap:balance">Our <span class="hl" style="--hl-color:var(--iee-yellow-ink); color:var(--iee-hl-ink)">certifications.</span></h1>
       </div>
-
       <div style="display:flex; flex-direction:column; gap:16px; align-self:start">
         <div style="position:relative; width:100%; aspect-ratio:1/1">
           <div style="position:absolute; left:11.16%; right:11.16%; top:2.76%; bottom:2.76%; border-radius:12.53%/10.3%; background:var(--iee-glass); backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px); pointer-events:none"></div>
@@ -185,94 +180,67 @@
     </div>
   </section>
 
-  <section style="background:var(--iee-bg); border-bottom:1px solid var(--iee-border)">
-    <div style="max-width:1280px; margin:0 auto; padding:56px; display:grid; grid-template-columns:1fr 420px; gap:48px; align-items:center">
-      <p style="margin:0; font-size:17px; line-height:1.7; color:var(--iee-text-muted); text-wrap:pretty">At IEE, we provide end-to-end managed IT services, from cloud infrastructure and systems integration to disaster recovery and application development, with expertise in highly regulated industries.</p>
-      <div style="width:100%; aspect-ratio:16/9; background:var(--iee-surface); border:2px dashed var(--iee-border); border-radius:14px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px; color:var(--iee-text-muted)">
-        <span class="material-symbols-outlined" style="font-size:32px">image</span>
-        <span style="font-size:12px; letter-spacing:.04em; text-align:center; max-width:220px">Image placeholder</span>
-      </div>
-    </div>
-  </section>
-
-  <section style="background:var(--iee-text); border-bottom:1px solid var(--iee-text-2)">
-    <div style="max-width:1280px; margin:0 auto; padding:72px 56px; display:flex; flex-direction:column; gap:28px">
-      <h2 style="margin:0; font:400 24px/1.3 'Michroma',sans-serif; letter-spacing:0; color:var(--iee-bg); text-align:center">Three globally recognised certifications. One standard.</h2>
-      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:20px">
-        <div style="padding:28px 24px; background:var(--iee-text-strong); border:1px solid var(--iee-text-2); display:flex; flex-direction:column; gap:10px; border-radius:14px">
-          <div style="width:34px; height:34px; border-radius:50%; background:var(--iee-text); display:flex; align-items:center; justify-content:center"><span class="material-symbols-outlined" style="font-size:18px; color:#00aeef">shield</span></div>
-          <div style="font:400 16px/1.3 'Michroma',sans-serif; color:var(--iee-bg)">ISO 27001 &mdash; Information Security</div>
-          <div style="font-size:15px; line-height:1.6; color:var(--iee-text-faint)">Formal, audited controls over how data is protected, not ad-hoc policy written after the fact.</div>
-        </div>
-        <div style="padding:28px 24px; background:var(--iee-text-strong); border:1px solid var(--iee-text-2); display:flex; flex-direction:column; gap:10px; border-radius:14px">
-          <div style="width:34px; height:34px; border-radius:50%; background:var(--iee-text); display:flex; align-items:center; justify-content:center"><span class="material-symbols-outlined" style="font-size:18px; color:#ed1c24">restore</span></div>
-          <div style="font:400 16px/1.3 'Michroma',sans-serif; color:var(--iee-bg)">ISO 22301 &mdash; Business Continuity</div>
-          <div style="font-size:15px; line-height:1.6; color:var(--iee-text-faint)">Proof that operations can recover and keep functioning if something goes wrong, tested, not assumed.</div>
-        </div>
-        <div style="padding:28px 24px; background:var(--iee-text-strong); border:1px solid var(--iee-text-2); display:flex; flex-direction:column; gap:10px; border-radius:14px">
-          <div style="width:34px; height:34px; border-radius:50%; background:var(--iee-text); display:flex; align-items:center; justify-content:center"><span class="material-symbols-outlined" style="font-size:18px; color:#00a651">workspace_premium</span></div>
-          <div style="font:400 16px/1.3 'Michroma',sans-serif; color:var(--iee-bg)">ISO 9001 &mdash; Quality Management</div>
-          <div style="font-size:15px; line-height:1.6; color:var(--iee-text-faint)">A consistent, documented standard of delivery, independently reviewed on a recurring basis.</div>
-        </div>
-      </div>
-      <div style="font-size:14px; line-height:1.5; color:var(--iee-text-faint); text-align:center">Every certification is renewed on a fixed audit cycle, not issued once and left to expire.</div>
-    </div>
-  </section>
-
   <section style="background:var(--iee-bg)">
-    <div style="max-width:1280px; margin:0 auto; padding:72px 56px; display:flex; flex-direction:column; gap:36px">
-      <div style="display:flex; flex-direction:column; gap:14px">
-        <div style="width:44px; height:3px; background:#00aeef"></div>
-        <h2 style="margin:0; font:400 24px/1.3 'Michroma',sans-serif; letter-spacing:0; color:var(--iee-text)">Our Services</h2>
-      </div>
+    <div style="max-width:1280px; margin:0 auto; padding:72px 56px; display:flex; flex-direction:column; gap:28px">
       <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:20px">
-        <a href="cloud-solutions.dc.html" style="padding:26px 22px; background:#1A1F29; border:1px solid #2A303C; display:flex; flex-direction:column; gap:12px; border-radius:14px; text-decoration:none"><div style="width:34px; height:34px; border-radius:50%; background:#0B0E14; border:1px solid #2A303C; display:flex; align-items:center; justify-content:center"><span class="material-symbols-outlined" style="font-size:18px; color:#ee4097">cloud</span></div><div style="font:400 13px/1.3 'Michroma',sans-serif; color:#ee4097">Cloud Services</div><div style="font-size:14px; line-height:1.6; color:#AEB5C1">We help businesses adopt and manage cloud infrastructure, improving flexibility and business resilience.</div></a>
-        <a href="business-solutions.dc.html" style="padding:26px 22px; background:#1A1F29; border:1px solid #2A303C; display:flex; flex-direction:column; gap:12px; border-radius:14px; text-decoration:none"><div style="width:34px; height:34px; border-radius:50%; background:#0B0E14; border:1px solid #2A303C; display:flex; align-items:center; justify-content:center"><span class="material-symbols-outlined" style="font-size:18px; color:#00aeef">insights</span></div><div style="font:400 13px/1.3 'Michroma',sans-serif; color:#00aeef">Business Solutions</div><div style="font-size:14px; line-height:1.6; color:#AEB5C1">We provide, set up and configure the tools that turn scattered work and data into one system built around your business.</div></a>
-        <a href="disaster-recovery.dc.html" style="padding:26px 22px; background:#1A1F29; border:1px solid #2A303C; display:flex; flex-direction:column; gap:12px; border-radius:14px; text-decoration:none"><div style="width:34px; height:34px; border-radius:50%; background:#0B0E14; border:1px solid #2A303C; display:flex; align-items:center; justify-content:center"><span class="material-symbols-outlined" style="font-size:18px; color:#00a651">restore</span></div><div style="font:400 13px/1.3 'Michroma',sans-serif; color:#00a651">Disaster Recovery</div><div style="font-size:14px; line-height:1.6; color:#AEB5C1">We ensure critical business information stays recoverable, tested regularly so downtime is minimised if something goes wrong.</div></a>
-        <a href="systems-integration.dc.html" style="padding:26px 22px; background:#1A1F29; border:1px solid #2A303C; display:flex; flex-direction:column; gap:12px; border-radius:14px; text-decoration:none"><div style="width:34px; height:34px; border-radius:50%; background:#0B0E14; border:1px solid #2A303C; display:flex; align-items:center; justify-content:center"><span class="material-symbols-outlined" style="font-size:18px; color:#00aeef">hub</span></div><div style="font:400 13px/1.3 'Michroma',sans-serif; color:#00aeef">Systems Integration</div><div style="font-size:14px; line-height:1.6; color:#AEB5C1">We integrate the different systems already running your business, so your IT investment works as one connected environment.</div></a>
-        <a href="application-development.dc.html" style="padding:26px 22px; background:#1A1F29; border:1px solid #2A303C; display:flex; flex-direction:column; gap:12px; border-radius:14px; text-decoration:none"><div style="width:34px; height:34px; border-radius:50%; background:#0B0E14; border:1px solid #2A303C; display:flex; align-items:center; justify-content:center"><span class="material-symbols-outlined" style="font-size:18px; color:#ed1c24">code</span></div><div style="font:400 13px/1.3 'Michroma',sans-serif; color:#ed1c24">Application Development</div><div style="font-size:14px; line-height:1.6; color:#AEB5C1">We can develop applications built to your specifications, not generic software forced to fit your business.</div></a>
-        <a href="helpdesk-support.dc.html" style="padding:26px 22px; background:#1A1F29; border:1px solid #2A303C; display:flex; flex-direction:column; gap:12px; border-radius:14px; text-decoration:none"><div style="width:34px; height:34px; border-radius:50%; background:#0B0E14; border:1px solid #2A303C; display:flex; align-items:center; justify-content:center"><span class="material-symbols-outlined" style="font-size:18px; color:#fff200">support_agent</span></div><div style="font:400 13px/1.3 'Michroma',sans-serif; color:#fff200">Helpdesk Support</div><div style="font-size:14px; line-height:1.6; color:#AEB5C1">We manage your support tickets end to end, and step in on the complex, escalated issues your team can't resolve alone.</div></a>
+        <div style="padding:30px 26px; background:var(--iee-surface); border:1px solid var(--iee-border); display:flex; flex-direction:column; gap:12px; border-radius:14px">
+          <div style="width:34px; height:34px; border-radius:50%; background:var(--iee-bg); border:1px solid var(--iee-border); display:flex; align-items:center; justify-content:center"><span class="material-symbols-outlined" style="font-size:18px; color:#00aeef">shield</span></div>
+          <div style="font:400 16px/1.3 'Michroma',sans-serif; color:#00aeef">ISO 27001 for Information Security</div>
+          <div style="font-size:15px; line-height:1.6; color:var(--iee-text-muted)">Formal, audited controls over how our client data is protected, not ad-hoc policy written after the fact.</div>
+          <div style="font-size:14px; line-height:1.6; color:var(--iee-text-muted)"><strong style="color:var(--iee-text)">What it covers:</strong> access control, risk assessment, and how information security is managed across the entire business.</div>
+          <a href="#" style="font:400 11px/1 'Michroma',sans-serif; letter-spacing:.06em; text-transform:uppercase; color:#00aeef">View our ISO 27001 certificate →</a>
+        </div>
+        <div style="padding:30px 26px; background:var(--iee-surface); border:1px solid var(--iee-border); display:flex; flex-direction:column; gap:12px; border-radius:14px">
+          <div style="width:34px; height:34px; border-radius:50%; background:var(--iee-bg); border:1px solid var(--iee-border); display:flex; align-items:center; justify-content:center"><span class="material-symbols-outlined" style="font-size:18px; color:#ed1c24">restore</span></div>
+          <div style="font:400 16px/1.3 'Michroma',sans-serif; color:#ed1c24">ISO 22301 for Business Continuity</div>
+          <div style="font-size:15px; line-height:1.6; color:var(--iee-text-muted)">Proof that operations can recover and keep functioning if something goes wrong.</div>
+          <div style="font-size:14px; line-height:1.6; color:var(--iee-text-muted)"><strong style="color:var(--iee-text)">What it covers:</strong> incident response, recovery planning, and a required exercise programme that actually tests those plans against real scenarios.</div>
+          <a href="#" style="font:400 11px/1 'Michroma',sans-serif; letter-spacing:.06em; text-transform:uppercase; color:#ed1c24">View our ISO 22301 certificate →</a>
+        </div>
+        <div style="padding:30px 26px; background:var(--iee-surface); border:1px solid var(--iee-border); display:flex; flex-direction:column; gap:12px; border-radius:14px">
+          <div style="width:34px; height:34px; border-radius:50%; background:#0B0E14; border:1px solid var(--iee-chip-bg); display:flex; align-items:center; justify-content:center"><span class="material-symbols-outlined" style="font-size:18px; color:#fff200">workspace_premium</span></div>
+          <div style="font:400 16px/1.3 'Michroma',sans-serif; color:var(--iee-yellow-ink)">ISO 9001 for Quality Management</div>
+          <div style="font-size:15px; line-height:1.6; color:var(--iee-text-muted)">A documented quality management system, independently audited on a recurring basis.</div>
+          <div style="font-size:14px; line-height:1.6; color:var(--iee-text-muted)"><strong style="color:var(--iee-text)">What it covers:</strong> cloud solutions, infrastructure, systems integration, business applications, security risk solutions, workplace strategy, and consultancy services.</div>
+          <a href="#" style="font:400 11px/1 'Michroma',sans-serif; letter-spacing:.06em; text-transform:uppercase; color:var(--iee-yellow-ink)">View our ISO 9001 certificate →</a>
+        </div>
       </div>
+      <div style="font-size:14px; line-height:1.6; color:var(--iee-text-muted); text-align:center"><strong style="color:var(--iee-text)">Certified by TÜV Rheinland Inspection Services, registration 01 100 929032. Valid 2024-11-21 to 2027-11-20.</strong></div>
     </div>
   </section>
 
   <section style="background:var(--iee-text); border-top:1px solid var(--iee-text-2); border-bottom:1px solid var(--iee-text-2)">
-    <div style="max-width:1280px; margin:0 auto; padding:72px 56px; display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center">
-      <div style="display:flex; flex-direction:column; gap:28px">
-        <h2 style="margin:0; font:400 24px/1.3 'Michroma',sans-serif; letter-spacing:0; color:var(--iee-bg)">Why Choose Us</h2>
-        <ul style="margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:22px">
-          <li style="display:flex; gap:14px; align-items:flex-start"><span style="width:22px; height:22px; flex:none; margin-top:2px; background:var(--iee-text-strong); border:1px solid var(--iee-text-2); color:#00aeef; font-size:12px; display:flex; align-items:center; justify-content:center; border-radius:14px">✓</span><span style="font-size:16px; line-height:1.6; color:var(--iee-border-strong)"><strong style="color:var(--iee-bg)">One provider, the whole stack:</strong> Cloud, infrastructure, security, recovery, helpdesk. One accountable partner instead of five vendors you have to handle separately.</span></li>
-          <li style="display:flex; gap:14px; align-items:flex-start"><span style="width:22px; height:22px; flex:none; margin-top:2px; background:var(--iee-text-strong); border:1px solid var(--iee-text-2); color:#00aeef; font-size:12px; display:flex; align-items:center; justify-content:center; border-radius:14px">✓</span><span style="font-size:16px; line-height:1.6; color:var(--iee-border-strong)"><strong style="color:var(--iee-bg)">Proof you can verify:</strong> We hold ISO 27001, 22301, and 9001, independently audited by TÜV Rheinland.</span></li>
-          <li style="display:flex; gap:14px; align-items:flex-start"><span style="width:22px; height:22px; flex:none; margin-top:2px; background:var(--iee-text-strong); border:1px solid var(--iee-text-2); color:#00aeef; font-size:12px; display:flex; align-items:center; justify-content:center; border-radius:14px">✓</span><span style="font-size:16px; line-height:1.6; color:var(--iee-border-strong)"><strong style="color:var(--iee-bg)">A partner that's always there:</strong> We stay hands-on once the contract is signed, checking in consistently and staying easy to reach.</span></li>
-        </ul>
+    <div style="max-width:1280px; margin:0 auto; padding:64px 56px; display:grid; grid-template-columns:1fr 420px; gap:48px; align-items:center">
+      <div style="display:flex; flex-direction:column; gap:16px">
+        <h2 style="margin:0; font:400 22px/1.3 'Michroma',sans-serif; letter-spacing:0; color:var(--iee-bg)">How certification actually works</h2>
+        <p style="margin:0; font-size:16px; line-height:1.7; color:var(--iee-text-faint); text-wrap:pretty">None of these is required. An IT provider can operate without any of them. Getting certified means submitting to an external audit and passing it. Keeping it is harder: ISO certification runs on a three-year cycle, with annual surveillance audits in between and a full recertification audit at the end. Miss the process, and the certification lapses. That's what separates an audited standard from a claim on a website.</p>
       </div>
-      <div style="width:100%; aspect-ratio:4/3; background:var(--iee-text-strong); border:2px dashed var(--iee-text-2); border-radius:14px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px; color:var(--iee-text-faint)">
+      <div style="width:100%; aspect-ratio:16/9; background:var(--iee-text-strong); border:2px dashed var(--iee-text-3); border-radius:14px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px; color:var(--iee-text-muted)">
         <span class="material-symbols-outlined" style="font-size:32px">image</span>
         <span style="font-size:12px; letter-spacing:.04em; text-align:center; max-width:220px">Image placeholder</span>
       </div>
     </div>
   </section>
 
-  <section style="background:var(--iee-bg)">
-    <div style="max-width:1280px; margin:0 auto; padding:56px 56px; display:flex; flex-direction:column; gap:20px; align-items:center; text-align:center">
-      <h3 style="margin:0; font:400 20px/1.3 'Michroma',sans-serif; letter-spacing:0; color:var(--iee-text)">Trusted by businesses who need robust IT infrastructure</h3>
-      <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:10px">
-        <span style="padding:9px 16px; background:var(--iee-surface); border:1px solid var(--iee-border); border-radius:999px; font-size:13px; color:var(--iee-text)">OS Holding</span>
-        <span style="padding:9px 16px; background:var(--iee-surface); border:1px solid var(--iee-border); border-radius:999px; font-size:13px; color:var(--iee-text)">PPS</span>
-        <span style="padding:9px 16px; background:var(--iee-surface); border:1px solid var(--iee-border); border-radius:999px; font-size:13px; color:var(--iee-text)">Natures Garden</span>
-        <span style="padding:9px 16px; background:var(--iee-surface); border:1px solid var(--iee-border); border-radius:999px; font-size:13px; color:var(--iee-text)">Sequence Logistics</span>
-        <span style="padding:9px 16px; background:var(--iee-surface); border:1px solid var(--iee-border); border-radius:999px; font-size:13px; color:var(--iee-text)">State Security</span>
-        <span style="padding:9px 16px; background:var(--iee-surface); border:1px solid var(--iee-border); border-radius:999px; font-size:13px; color:var(--iee-text)">SASSA</span>
+  <section style="background:var(--iee-text)">
+    <div style="max-width:1280px; margin:0 auto; padding:64px 56px; display:grid; grid-template-columns:1fr 420px; gap:48px; align-items:center">
+      <div style="display:flex; flex-direction:column; gap:10px">
+        <h2 style="margin:0; font:400 20px/1.3 'Michroma',sans-serif; letter-spacing:0; color:var(--iee-bg)">Independently Verified</h2>
+        <p style="margin:0; font-size:16px; line-height:1.65; color:var(--iee-text-faint); text-wrap:pretty">Every certification here is checked by TÜV Rheinland, an independent, internationally recognised certification body.</p>
+      </div>
+      <div style="width:100%; aspect-ratio:16/9; background:var(--iee-text-strong); border:2px dashed var(--iee-text-3); border-radius:14px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px; color:var(--iee-text-muted)">
+        <span class="material-symbols-outlined" style="font-size:32px">image</span>
+        <span style="font-size:12px; letter-spacing:.04em; text-align:center; max-width:220px">Image placeholder</span>
       </div>
     </div>
   </section>
 
-  <footer style="background:var(--iee-bg); border-top:1px solid var(--iee-border); margin-top:auto">
+<footer style="background:var(--iee-bg); border-top:1px solid var(--iee-border); margin-top:auto">
     <div style="max-width:1280px; margin:0 auto; padding:48px 56px 32px; display:flex; justify-content:space-between; gap:40px; flex-wrap:wrap">
       <div style="display:flex; flex-direction:column; gap:12px; max-width:320px">
         <div style="display:flex; align-items:center; gap:12px">
           <img class="iee-dark-only" src="Elements/Logo-14.svg" alt="IEE logo" style="width:54px; height:54px; flex:none"><img class="iee-light-only" src="Elements/Logo-13.svg" alt="IEE logo" style="width:54px; height:54px; flex:none">
-          <div style="font:400 12px/1 'Michroma',sans-serif; letter-spacing:.1em; color:var(--iee-text)"><span style="color:#00aeef">I</span>NTELLIGENCE <span style="color:#00aeef">E</span>VERYWHERE <span style="color:#00aeef">E</span>NTERPRISE</div>
+          <div style="font:400 12px/1 'Michroma',sans-serif; letter-spacing:.1em; color:var(--iee-text)"><span style="color:var(--iee-yellow-accent)">I</span>NTELLIGENCE <span style="color:var(--iee-yellow-accent)">E</span>VERYWHERE <span style="color:var(--iee-yellow-accent)">E</span>NTERPRISE</div>
         </div>
         <div style="font-size:13px; line-height:1.6; color:var(--iee-text-muted)">Intelligence Everywhere Enterprise. Managed IT built on certified, audited proof.</div>
       </div>

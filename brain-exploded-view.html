@@ -5,10 +5,72 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Brain — Exploded View</title>
 <style>
+  /* Theme tokens: dark is the default; light applies when <html data-iee-theme="light">. */
   :root{
-    --bg-0:#0b0d10;
-    --bg-1:#111418;
-    --line:#e7e5df;
+    color-scheme:dark;
+    --iee-bg:#0B0E14;
+    --iee-bg-glow:#141A26;
+    --iee-surface:#1A1F29;
+    --iee-border:#2A303C;
+    --iee-border-strong:#3D4A5F;
+    --iee-text:#EDEFF2;
+    --iee-text-2:#DDE1E7;
+    --iee-text-3:#C7CDD6;
+    --iee-text-muted:#8A93A3;
+    --iee-text-faint:#5C6473;
+    --iee-text-strong:#fff;
+    --iee-logo-fill:#fff;
+    --iee-chip-bg:#2A303C;
+    --iee-yellow-ink:#fff200;
+    --iee-yellow-accent:#fff200;
+    --iee-hl-ink:#0B0E14;
+    --iee-nav-yellow:rgba(255,242,0,0.55);
+    --iee-glass:rgba(11,14,20,0.45);
+    --iee-line-soft:rgba(237,239,242,.35);
+    --iee-shadow:rgba(0,0,0,.4);
+    --iee-dot-ring:rgba(0,0,0,0);
+    --iee-brain-bg-0:#0b0d10;
+    --iee-brain-bg-1:#111418;
+    --iee-brain-line:#e7e5df;
+    --iee-brain-glow:rgba(210,225,235,0.08);
+    --iee-brain-hover-glow:rgba(220,232,240,0.35);
+    --iee-brain-label-bg:rgba(11,13,16,.94);
+  }
+  html[data-iee-theme="light"]{
+    color-scheme:light;
+    --iee-bg:#EDEFF2;
+    --iee-bg-glow:#FFFFFF;
+    --iee-surface:#FFFFFF;
+    --iee-border:#DDE1E7;
+    --iee-border-strong:#C3C9D2;
+    --iee-text:#0B0E14;
+    --iee-text-2:#2A303C;
+    --iee-text-3:#3A4150;
+    --iee-text-muted:#5C6473;
+    --iee-text-faint:#8A93A3;
+    --iee-text-strong:#1A1F29;
+    --iee-logo-fill:#0B0E14;
+    --iee-chip-bg:#0B0E14;
+    --iee-yellow-ink:#0B0E14;
+    --iee-yellow-accent:#00aeef;
+    --iee-hl-ink:#fff200;
+    --iee-nav-yellow:rgba(11,14,20,0.45);
+    --iee-glass:rgba(255,255,255,0.55);
+    --iee-line-soft:rgba(11,14,20,.25);
+    --iee-shadow:rgba(11,14,20,.12);
+    --iee-dot-ring:#0B0E14;
+    --iee-brain-bg-0:#EDEFF2;
+    --iee-brain-bg-1:#FFFFFF;
+    --iee-brain-line:#1A1F29;
+    --iee-brain-glow:rgba(11,14,20,0.10);
+    --iee-brain-hover-glow:rgba(11,14,20,0.25);
+    --iee-brain-label-bg:rgba(255,255,255,.96);
+  }
+
+  :root{
+    --bg-0:var(--iee-brain-bg-0);
+    --bg-1:var(--iee-brain-bg-1);
+    --line:var(--iee-brain-line);
     --caption:#6c7177;
   }
   *{ box-sizing:border-box; }
@@ -35,7 +97,7 @@
     position:absolute; inset:0;
     width:100%; height:100%;
     overflow:visible;
-    filter: drop-shadow(0 0 22px rgba(210,225,235,0.08));
+    filter: drop-shadow(0 0 22px var(--iee-brain-glow));
   }
   .cls-1{ fill: var(--line); }
   .hit-area{ fill: rgba(0,0,0,0.001); stroke: none; }
@@ -45,21 +107,21 @@
     will-change: transform;
     transition: filter .3s ease;
   }
-  .part:hover{ filter: drop-shadow(0 0 8px rgba(220,232,240,0.35)); }
+  .part:hover{ filter: drop-shadow(0 0 8px var(--iee-brain-hover-glow)); }
 
   .part .cls-1{ transition: fill .25s ease; }
 
   /* per-part hover colours, traced from the supplied highlight artwork */
   #part0:hover .cls-1, #part0:focus .cls-1{ fill: #00aeef; }  /* frontal lobe   — blue   — Systems Integration */
   #part1:hover .cls-1, #part1:focus .cls-1{ fill: #ed1c24; }  /* parietal piece — red    — Application Development */
-  #part2:hover .cls-1, #part2:focus .cls-1{ fill: #fff200; }  /* temporal lobe  — yellow — Helpdesk Support */
+  #part2:hover .cls-1, #part2:focus .cls-1{ fill: var(--iee-yellow-ink); }  /* temporal lobe  — yellow — Helpdesk Support */
   #part3:hover .cls-1, #part3:focus .cls-1{ fill: #00a651; }  /* central lobe   — green  — Disaster Recovery */
   #part4:hover .cls-1, #part4:focus .cls-1{ fill: #ee4097; }  /* cerebellum     — pink   — Cloud Solutions */
   #part5:hover .cls-1, #part5:focus .cls-1{ fill: #00aeef; }  /* brainstem      — blue   — Business Solutions */
 
   #part0:hover, #part0:focus{ filter: drop-shadow(0 0 12px rgba(0,174,239,0.55)); }
   #part1:hover, #part1:focus{ filter: drop-shadow(0 0 12px rgba(237,28,36,0.55)); }
-  #part2:hover, #part2:focus{ filter: drop-shadow(0 0 12px rgba(255,242,0,0.55)); }
+  #part2:hover, #part2:focus{ filter: drop-shadow(0 0 12px var(--iee-nav-yellow)); }
   #part3:hover, #part3:focus{ filter: drop-shadow(0 0 12px rgba(0,166,81,0.55)); }
   #part4:hover, #part4:focus{ filter: drop-shadow(0 0 12px rgba(238,64,151,0.55)); }
   #part5:hover, #part5:focus{ filter: drop-shadow(0 0 12px rgba(0,174,239,0.55)); }
@@ -72,18 +134,20 @@
     transform:translate(-50%, calc(-100% - 14px));
     display:flex; align-items:center; gap:8px;
     padding:7px 14px;
-    background:rgba(11,13,16,.94);
+    background:var(--iee-brain-label-bg);
     border:1px solid var(--pc, #8A93A3);
     border-radius:999px;
     font:400 11px/1 -apple-system, "Inter", "Segoe UI", Helvetica, Arial, sans-serif;
     letter-spacing:.04em;
     text-transform:uppercase;
-    color:#EDEFF2;
+    color:var(--iee-text);
     white-space:nowrap;
     opacity:0;
     pointer-events:none;
     z-index:20;
   }
+  /* yellow never sits on a light surface: the Helpdesk label stays a dark chip */
+  html[data-iee-theme="light"] #label2{ background:rgba(11,14,20,.94); color:#EDEFF2; }
   .part-label .dot{ width:7px; height:7px; border-radius:50%; background:var(--pc, #8A93A3); flex:none; }
 
   .credit{
@@ -96,6 +160,17 @@
     text-transform:uppercase;
   }
 </style>
+<script>
+  // Theme follows the host page: ?theme=, then the saved choice, then messages from the parent.
+  (function () {
+    var root = document.documentElement;
+    function set(t) { if (t === 'light' || t === 'dark') root.setAttribute('data-iee-theme', t); }
+    var q = location.search.match(/[?&]theme=(light|dark)\b/);
+    if (q) set(q[1]); else { try { set(localStorage.getItem('iee-theme')); } catch (e) {} }
+    window.addEventListener('message', function (e) { if (e.data && e.data.type === 'iee-theme') set(e.data.theme); });
+    if (window.parent !== window) { try { window.parent.postMessage({ type: 'iee-theme-request' }, '*'); } catch (e) {} }
+  })();
+</script>
 <script>
   if (/[?&]transparent=1\b/.test(location.search)) {
     document.write('<style>html,body{background:transparent !important;}</style>');
